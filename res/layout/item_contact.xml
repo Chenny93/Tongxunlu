@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+    
+        <com.tarena.utils.ImageCircleView
+        android:id="@+id/iv_Photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/img04e_01"/>
+    
+    <TextView 
+        android:id="@+id/tv_NameSubString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="28dp"
+        android:text="Chenny"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:textSize="14sp"/>
+    
+    
+    
+
+</FrameLayout>

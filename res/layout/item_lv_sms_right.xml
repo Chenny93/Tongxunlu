@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+       <TextView 
+           android:id="@+id/tv_sms_date"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentRight="true"
+           android:layout_alignParentTop="true"
+           android:gravity="center"
+           android:padding="3dp"
+           android:text="1111-11-11 11:11:11"/>   
+           
+    <com.tarena.utils.ImageCircleView
+        android:id="@+id/iv_Photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/tv_sms_date"
+        android:src="@drawable/img04e_01"/>   
+        
+    <TextView 
+        android:id="@+id/tv_sms_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_sms_date"
+        android:layout_toLeftOf="@id/iv_Photo"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/img06_07"
+        android:text="sms_right"
+        android:textColor="@android:color/black"/>
+    
+
+</RelativeLayout>

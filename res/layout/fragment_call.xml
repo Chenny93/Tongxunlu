@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2C30" >
+    
+    <RelativeLayout 
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/img01g_02">
+        
+        <TextView 
+            android:id="@+id/tv_callnumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="138-1000"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+        <ImageView 
+            android:id="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="21dp"
+            android:src="@drawable/img07_03"/>
+        
+        <ImageView 
+            android:id="@+id/iv_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_callnumber"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/img07_06"/>
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rl"
+        android:background="@drawable/img06y_02"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl2"
+        android:layout_width="wrap_content"
+        android:layout_height="240dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/img07_02">
+        
+        <GridView 
+            android:id="@+id/gv_keyboard"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:numColumns="3"/>
+        
+        <ImageView 
+            android:id="@+id/iv_keyboarddown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/img07_111"/>
+        
+        <ImageView 
+            android:id="@+id/iv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/img07_15"/>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+ 
+<!--     <com.tarena.utils.ImageCircleView
+        android:id="@+id/iv_Photo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/sina"/> -->
+    
+    <TextView 
+        android:id="@+id/tv_message_name"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:gravity="bottom"/>
+    
+    <TextView 
+        android:id="@+id/tv_message_body"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" 
+        android:layout_alignLeft="@id/tv_message_name"
+        android:layout_below="@id/tv_message_name"
+        android:gravity="center"
+        android:singleLine="true"/>
+
+</RelativeLayout>

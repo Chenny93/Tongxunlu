@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="30dp" >
+    
+    <LinearLayout 
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/img03_03g_05">
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img03_03g_03">
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img03_03"/>
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/img04_03"/>
+            
+            <EditText 
+                android:id="@+id/tv_contact_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:fontFamily="黑体"
+                android:text="Robin"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img03b_03"
+            android:padding="10dp">
+            
+            <EditText
+                android:id="@+id/tv_contact_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="contact detail"/>
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img03_10"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img03b_03"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/tv_contact_detail3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="TextView3"/>
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img03_10"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img03b_03"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/tv_contact_detail4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="TextView4"/>
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img03_10"/>
+            
+        </RelativeLayout>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img03b_03"
+            android:padding="10dp">
+            
+            <TextView 
+                android:id="@+id/tv_contact_detail5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="TextView5"/>
+            
+            <ImageView 
+                android:id="@+id/iv_contact_detail6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/img03_10"/>
+            
+        </RelativeLayout>        
+        
+    </LinearLayout>
+    
+    <com.tarena.utils.ImageCircleView
+        android:id="@+id/iv_Photo"
+    	android:layout_width="60dp"
+    	android:layout_height="60dp"
+    	android:layout_centerHorizontal="true"
+    	android:src="@drawable/img01_02"/>
+
+</RelativeLayout>

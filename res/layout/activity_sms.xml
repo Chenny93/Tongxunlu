@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".SmsActivity" >
+
+    <RelativeLayout 
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img01_02">
+        
+        <TextView 
+            android:id="@+id/tv_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="隔壁老王"
+            android:textColor="#ffffff"
+            android:textSize="18sp"/>
+        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_sms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rl1"
+        android:background="@drawable/img06y_02"
+        android:listSelector="@android:color/transparent"
+        android:divider="@null"
+        android:numColumns="3"/>
+    
+    <LinearLayout 
+        android:id="@+id/ll"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:padding="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true">
+        
+<!--         <ImageView 
+            android:id="@+id/iv"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/img06_11"/> -->
+        
+        <EditText 
+            android:id="@+id/et_smsBody"
+            android:layout_width="0dp"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:background="@drawable/img06_14"
+            android:hint="请输入短信内容"
+            android:ems="10">
+            <requestFocus/>
+            </EditText>
+            
+        <Button 
+            android:id="@+id/bt_sendSms"
+            android:layout_width="60dp"
+            android:layout_height="44dp"
+            android:background="@null"
+            android:textColor="#0000aa"
+            android:onClick="sendSms"
+            android:text="发送"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

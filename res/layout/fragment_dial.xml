@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+    
+    <RelativeLayout 
+        android:id="@+id/rl_dial"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/img01_02">  
+        
+        <TextView 
+            android:id="@+id/tv_dial_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:text="138-8888"/>  
+            
+<!--         <ImageView 
+            android:id="@+id/iv_dialleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/img07_03"/>  -->
+            
+        <ImageView 
+            android:id="@+id/iv_dial_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/img07_06"/>        
+    </RelativeLayout>
+    
+    <ListView 
+        android:id="@+id/lv_dial"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/rl_dial"
+        android:background="@drawable/img06y_02"
+        android:numColumns="3"/>
+    
+    <RelativeLayout 
+        android:id="@+id/rl_dial2"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:background="@drawable/img07_02">
+        
+    <GridView 
+        android:id="@+id/gv_keyboard"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_alignParentLeft="true"
+        android:numColumns="3"/>   
+        
+            <ImageView 
+            android:id="@+id/iv_keyboarddown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/img07_111"/>
+        
+    <ImageView 
+        android:id="@+id/iv_dial_call"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/img07_15"/>
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>
